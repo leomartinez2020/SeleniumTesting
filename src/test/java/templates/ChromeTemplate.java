@@ -5,6 +5,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * Plantilla para el driver chrome
+ */
 public class ChromeTemplate extends TestTemplate {
     public void setup() {
         String folder = System.getProperty("user.dir");

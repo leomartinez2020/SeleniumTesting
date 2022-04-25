@@ -5,6 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+/**
+ * Esta clase plantilla contiene dos métodos comúnes
+ * para los descendientes. El método setup es implementado
+ * de forma independiente
+ */
 public abstract class TestTemplate {
     WebDriver driver;
 
@@ -12,7 +17,6 @@ public abstract class TestTemplate {
 
     public final void verifyNumberOfShoes() {
         // Define some basic variables
-        //driver = new ChromeDriver();
         String baseUrl = "https://www.ebay.com/";
         String expectedBrand = "adidas";
         int expectedMinNumber = 2000;
@@ -39,7 +43,7 @@ public abstract class TestTemplate {
     }
 
     public final void teardown() {
-        // Close chrome
+        // Close browser
         driver.close();
     }
 }

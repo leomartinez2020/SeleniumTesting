@@ -5,6 +5,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * Plantilla para el driver edge
+ */
 public class EdgeTemplate extends TestTemplate {
     public void setup() {
         String folder = System.getProperty("user.dir");
